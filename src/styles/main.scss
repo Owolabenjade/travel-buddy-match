@@ -1,0 +1,48 @@
+// Variables
+$primary-color: #4682B4; // SteelBlue
+$secondary-color: #90EE90; // LightGreen
+$accent-color: #FFD700; // Gold
+$text-color: #333;
+$background-color: #f8f9fa;
+$border-radius: 8px;
+
+// Global styles
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  border-radius: $border-radius;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Button styles
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: $text-color;
+  
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+    border-color: darken($secondary-color, 10%);
+    color: $text-color;
+  }
+}

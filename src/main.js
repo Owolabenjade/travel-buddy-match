@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 // Import Bootstrap Icons
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import './styles/main.scss'
+import './styles/main.css'
 
 // Create the Vue app
 const app = createApp(App)

@@ -111,7 +111,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .pending-match-card {
     .destination-icon {
       width: 40px;

@@ -132,7 +132,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .messages-view {
     .user-avatar {
       position: relative;

@@ -432,7 +432,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .matches-view {
   .nav-tabs {
     border-bottom: 1px solid #dee2e6;

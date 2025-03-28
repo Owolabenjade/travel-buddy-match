@@ -550,7 +550,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .profile-image-container {
     position: relative;
     width: 150px;

@@ -143,7 +143,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .match-card {
     transition: transform 0.2s;
     

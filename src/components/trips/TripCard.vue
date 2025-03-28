@@ -125,7 +125,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .trip-card {
     transition: transform 0.2s;
     

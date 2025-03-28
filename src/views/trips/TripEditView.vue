@@ -388,7 +388,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .activity-checkboxes, .budget-options, .looking-for-options {
     margin-top: 8px;
   }

@@ -113,7 +113,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .hero-section {
     padding: 80px 0;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), 

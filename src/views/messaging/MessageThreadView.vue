@@ -279,7 +279,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .message-thread-view {
     height: calc(100vh - 160px);
     display: flex;

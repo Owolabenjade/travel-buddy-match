@@ -180,7 +180,7 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped>
   .notification-dropdown {
     width: 320px;
     padding: 0;

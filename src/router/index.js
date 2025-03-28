@@ -4,22 +4,29 @@ import HomeView from '@/views/HomeView.vue';
 
 // Route guard for authenticated routes
 const requireAuth = (to, from, next) => {
-  const user = auth.currentUser;
-  if (!user) {
-    next({ name: 'Login', query: { redirect: to.fullPath } });
-  } else {
-    next();
-  }
+  const unsubscribe = auth.onAuthStateChanged((user) => {
+    unsubscribe();
+    if (!user) {
+      next({ 
+        name: 'Login', 
+        query: { redirect: to.fullPath } 
+      });
+    } else {
+      next();
+    }
+  });
 };
 
 // Route guard for guest routes (logged in users are redirected)
 const requireGuest = (to, from, next) => {
-  const user = auth.currentUser;
-  if (user) {
-    next({ name: 'Dashboard' });
-  } else {
-    next();
-  }
+  const unsubscribe = auth.onAuthStateChanged((user) => {
+    unsubscribe();
+    if (user) {
+      next({ name: 'Dashboard' });
+    } else {
+      next();
+    }
+  });
 };
 
 const routes = [

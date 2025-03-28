@@ -141,21 +141,21 @@
       });
       
       const handleRegister = async () => {
-        if (!formValid.value) return;
-        
-        try {
-          await store.dispatch('auth/register', {
-            displayName: displayName.value,
-            email: email.value,
-            password: password.value
-          });
-          
-          // Redirect to profile setup
-          router.push('/profile');
-        } catch (err) {
-          console.error('Registration error:', err);
-        }
-      };
+      if (!formValid.value) return;
+
+      try {
+      await store.dispatch('auth/register', {
+      displayName: displayName.value,
+      email: email.value,
+      password: password.value
+    });
+    
+    // Redirect to dashboard instead of profile
+    router.push('/dashboard');
+    } catch (err) {
+    console.error('Registration error:', err);
+    }
+  };
       
       return {
         displayName,

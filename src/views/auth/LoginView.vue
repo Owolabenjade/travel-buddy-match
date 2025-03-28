@@ -78,19 +78,19 @@
       const error = computed(() => store.getters['auth/error']);
       
       const handleLogin = async () => {
-        try {
-          await store.dispatch('auth/login', {
-            email: email.value,
-            password: password.value
-          });
-          
-          // Redirect to intended destination or dashboard
-          const redirectPath = route.query.redirect || '/dashboard';
-          router.push(redirectPath);
-        } catch (err) {
-          console.error('Login error:', err);
-        }
-      };
+      try {
+      await store.dispatch('auth/login', {
+      email: email.value,
+      password: password.value
+    });
+    
+    // Get redirect path from query or use dashboard as default
+    const redirectPath = route.query.redirect || '/dashboard';
+    router.push(redirectPath);
+  } catch (err) {
+    console.error('Login error:', err);
+  }
+};
       
       return {
         email,

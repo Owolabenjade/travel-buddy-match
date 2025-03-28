@@ -106,6 +106,68 @@
         </div>
       </div>
       
+      <!-- About Section -->
+<div class="about-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">About This Project</h2>
+    
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="card shadow-sm p-4">
+          <h3 class="mb-3">The Inspiration</h3>
+          <p>
+            The idea for Travel Buddy Match was born out of a personal experience during my backpacking trip across Southeast Asia in 2022. 
+            I found myself in Bangkok, eager to explore but hesitant to venture out alone. The hostels were full of fellow travelers, 
+            but finding someone with similar interests and itineraries was surprisingly difficult. 
+          </p>
+          <p>
+            After spending hours in hostel common rooms trying to find compatible travel companions, I thought: "There has to be a better way!" 
+            That's when the concept of Travel Buddy Match began to take shape – a platform that connects like-minded travelers based on their 
+            destinations, interests, and travel styles.
+          </p>
+          <p>
+            I developed this application as my Portfolio Project for ALX Software Engineering Program, 
+            building it from concept to completion over eight intense weeks. The journey of creating this platform has been as 
+            rewarding as the travels that inspired it.
+          </p>
+          
+          <h3 class="mt-4 mb-3">Developer</h3>
+          <div class="developer-info">
+            <div class="d-flex align-items-center mb-3">
+              <div class="developer-img me-3">
+                <i class="bi bi-person-circle" style="font-size: 3rem;"></i>
+              </div>
+              <div>
+                <h4 class="mb-1">Benjamin Owolabi</h4>
+                <p class="text-muted mb-2">Full Stack Developer</p>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/benjaminowolabi" target="_blank" class="me-3" title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="https://www.github.com/owolabenjade" target="_blank" class="me-3" title="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://www.twitter.com/ademidowolabi" target="_blank" title="Twitter">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <h3 class="mt-4 mb-3">Project Repository</h3>
+          <p>
+            This project is open source. You can view the code, contribute, or fork the repository on GitHub:
+          </p>
+          <a href="https://github.com/Owolabenjade/travel-buddy-match" target="_blank" class="btn btn-outline-primary">
+            <i class="bi bi-github me-2"></i>View on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       <!-- Testimonials Section -->
       <div class="testimonials-section py-5 bg-light">
         <div class="container">
@@ -230,5 +292,29 @@ export default {
   .col-lg-6 {
     margin-bottom: 2rem;
   }
+}
+
+.about-section {
+  background-color: #f8f9fa;
+}
+
+.about-section p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.social-links a {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #2c5282;
+}
+
+.developer-img {
+  color: var(--primary-color);
 }
 </style>

@@ -12,7 +12,7 @@
             <router-link to="/register" class="btn btn-primary btn-lg me-3 px-4 py-2">
               Start Your Journey
             </router-link>
-            <a href="https://your-deployed-app-url.com" target="_blank" class="btn btn-success btn-lg px-4 py-2">
+            <a href="https://resilient-donut-a8da6c.netlify.app/" target="_blank" class="btn btn-success btn-lg px-4 py-2">
               Try The App
             </a>
           </div>

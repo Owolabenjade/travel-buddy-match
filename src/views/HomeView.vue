@@ -116,8 +116,9 @@
   <style scoped>
   .hero-section {
     padding: 80px 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), 
-                url('../assets/hero-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(135deg, #4682B4, #90EE90);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
   
   .features-section, .testimonials-section {

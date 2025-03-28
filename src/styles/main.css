@@ -1,16 +1,18 @@
-// Variables
-$primary-color: #4682B4; // SteelBlue
-$secondary-color: #90EE90; // LightGreen
-$accent-color: #FFD700; // Gold
-$text-color: #333;
-$background-color: #f8f9fa;
-$border-radius: 8px;
+/* Variables */
+:root {
+  --primary-color: #4682B4; /* SteelBlue */
+  --secondary-color: #90EE90; /* LightGreen */
+  --accent-color: #FFD700; /* Gold */
+  --text-color: #333;
+  --background-color: #f8f9fa;
+  --border-radius: 8px;
+}
 
-// Global styles
+/* Global styles */
 body {
   font-family: 'Roboto', sans-serif;
-  color: $text-color;
-  background-color: $background-color;
+  color: var(--text-color);
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
 }
@@ -20,29 +22,29 @@ body {
 }
 
 .card {
-  border-radius: $border-radius;
+  border-radius: var(--border-radius);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-// Button styles
+/* Button styles */
 .btn-primary {
-  background-color: $primary-color;
-  border-color: $primary-color;
-  
-  &:hover {
-    background-color: darken($primary-color, 10%);
-    border-color: darken($primary-color, 10%);
-  }
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #3a6b96; /* darken primary color */
+  border-color: #3a6b96;
 }
 
 .btn-secondary {
-  background-color: $secondary-color;
-  border-color: $secondary-color;
-  color: $text-color;
-  
-  &:hover {
-    background-color: darken($secondary-color, 10%);
-    border-color: darken($secondary-color, 10%);
-    color: $text-color;
-  }
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background-color: #74c974; /* darken secondary color */
+  border-color: #74c974;
+  color: var(--text-color);
 }

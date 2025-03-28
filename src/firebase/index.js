@@ -6,13 +6,13 @@ import { getMessaging, isSupported } from 'firebase/messaging';
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAqLJPu-wxLfcN1EgfhBWPuiTyLiAq853E",
-  authDomain: "travel-buddy-match.firebaseapp.com",
-  projectId: "travel-buddy-match",
-  storageBucket: "travel-buddy-match.firebasestorage.app",
-  messagingSenderId: "546610803604",
-  appId: "1:546610803604:web:d57e26f73d0da584e09581",
-  measurementId: "G-WH98HGSCGF"
+  apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+  authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.VUE_APP_FIREBASE_APP_ID,
+  measurementId: process.env.VUE_APP_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase

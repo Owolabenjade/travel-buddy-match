@@ -19,6 +19,49 @@
         </div>
       </div>
       
+      <!-- Key Features Section -->
+      <div class="key-features-section py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Key Features</h2>
+          
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+              <img src="https://images.unsplash.com/photo-1519003300449-424ad0405076?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Smart Matching">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="feature-title">Smart Matching</h3>
+              <p class="feature-desc">
+                Our intelligent algorithm matches you with travelers who share your interests, travel style, and destination plans. Find companions who will enhance your journey and create memorable experiences together.
+              </p>
+            </div>
+          </div>
+          
+          <div class="row align-items-center mb-5 flex-lg-row-reverse">
+            <div class="col-lg-6">
+              <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Secure Messaging">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="feature-title">Secure Messaging</h3>
+              <p class="feature-desc">
+                Connect safely with potential travel buddies through our secure in-app messaging system. Get to know each other, discuss trip details, and plan your adventure while keeping your personal information private.
+              </p>
+            </div>
+          </div>
+          
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="Trip Planning">
+            </div>
+            <div class="col-lg-6">
+              <h3 class="feature-title">Trip Planning</h3>
+              <p class="feature-desc">
+                Organize your journeys with our intuitive trip planning tools. Create detailed itineraries, specify your travel dates, preferences, and activities you're interested in. Share these plans with your matched companions to ensure everyone's on the same page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <!-- Features Section -->
       <div class="features-section py-5">
         <div class="container">
@@ -128,6 +171,21 @@ export default {
   margin-top: -24px; /* To counteract padding from DefaultLayout */
 }
 
+.key-features-section {
+  background-color: white;
+}
+
+.feature-title {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.feature-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 .features-section, .testimonials-section {
   padding: 80px 0;
 }
@@ -161,5 +219,16 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+
+/* Add some spacing on mobile devices */
+@media (max-width: 992px) {
+  .row.align-items-center {
+    margin-bottom: 3rem;
+  }
+  
+  .col-lg-6 {
+    margin-bottom: 2rem;
+  }
 }
 </style>

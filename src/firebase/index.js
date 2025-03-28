@@ -4,14 +4,15 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import { getMessaging, isSupported } from 'firebase/messaging';
 
-// Firebase configuration - you'll need to replace these with your actual Firebase project details
+// Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAqLJPu-wxLfcN1EgfhBWPuiTyLiAq853E",
+  authDomain: "travel-buddy-match.firebaseapp.com",
+  projectId: "travel-buddy-match",
+  storageBucket: "travel-buddy-match.firebasestorage.app",
+  messagingSenderId: "546610803604",
+  appId: "1:546610803604:web:d57e26f73d0da584e09581",
+  measurementId: "G-WH98HGSCGF"
 };
 
 // Initialize Firebase
